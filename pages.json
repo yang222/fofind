@@ -1,0 +1,73 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+		},
+	    {
+            "path" : "pages/story_station/story",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "玩家故事站",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#292756",
+				"navigationBarTextStyle":"white"
+            },
+			"app-plus":{
+				"bounce":true,
+				"popGesture":"close",
+				"animationType":"pop-in"
+			}
+            
+        }
+        ,{
+            "path" : "pages/release/release",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "玩家故事站",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#292756",
+				"navigationBarTextStyle":"white"
+            },
+			"app-plus":{
+				"bounce":true,
+				"popGesture":"close",
+				"animationType":"pop-in"
+			}
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+	    "color": "#939393",
+	    "selectedColor": "#f36f1a",
+	    "borderStyle": "black",
+	    "backgroundColor": "#ffffff",
+		"custom":true,
+	    "list": [{
+	        "pagePath": "pages/home/home",
+	        // "iconPath": "static/homss.png",
+	        // "selectedIconPath": "static/ordess.png",
+	        "text": "首页"
+	    },{
+	        "pagePath": "pages/release/release",
+	        // "iconPath": "static/homss.png",
+	        // "selectedIconPath": "static/ordess.png",
+	        "text": "有戏放映厅"
+	    },{
+	        "pagePath": "pages/story_station/story",
+	        // "iconPath": "static/homss.png",
+	        // "selectedIconPath": "static/ordess.png",
+	        "text": "玩家故事站"
+	    }]
+	}
+}
